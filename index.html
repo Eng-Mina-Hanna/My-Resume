@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mina Hanna Faheem - Electrical Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #0d1117; /* Dark background */
+        }
+        .header-bg {
+            background-color: #161b22;
+            background-image: url('https://www.transparenttextures.com/patterns/subtle-prism.png');
+            background-blend-mode: color-dodge;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -8px;
+            top: 10px;
+            width: 16px;
+            height: 16px;
+            background-color: #fcd34d; /* Amber */
+            border-radius: 50%;
+            border: 3px solid #0d1117; 
+        }
+        .timeline {
+            border-left: 3px solid #30363d;
+        }
+        .tab-button {
+             color: #8b949e;
+             border-bottom: 3px solid transparent;
+             transition: all 0.3s ease;
+             font-weight: 600;
+        }
+        .tab-button.active {
+            border-color: #fcd34d; /* Amber */
+            color: #f0f6fc;
+        }
+        .section-title {
+            color: #c9d1d9; 
+            border-left: 4px solid #fcd34d; /* Amber */
+        }
+        .card {
+             background-color: #161b22; /* Card Background */
+             border: 1px solid #30363d; /* Border color */
+             transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 15px rgba(252, 211, 77, 0.2);
+        }
+        .link-card {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            transition: all 0.3s ease;
+        }
+        .link-card:hover {
+            border-color: #fcd34d;
+            transform: scale(1.05);
+            background-color: #21262d;
+        }
+        .btn-cv {
+            background-color: #fcd34d;
+            color: #161b22;
+            transition: all 0.3s ease;
+        }
+        .btn-cv:hover {
+            background-color: #fbbf24;
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+<body class="text-gray-300">
+
+    <div class="container mx-auto p-2 sm:p-4 lg:p-6">
+        <div class="bg-[#0d1117] shadow-2xl rounded-2xl overflow-hidden border-2 border-[#30363d]">
+            
+            <!-- Header Section -->
+            <header class="header-bg text-white p-8 text-center relative">
+                 <div class="absolute inset-0 bg-black opacity-60"></div>
+                 <div class="relative z-10 flex flex-col items-center">
+                    <h1 class="text-4xl sm:text-5xl font-extrabold">Mina Hanna Faheem</h1>
+                    <p class="text-xl sm:text-2xl mt-2 text-amber-300 font-semibold">Electrical Engineer</p>
+                    <a href="Mina Hanna.pdf" download="Mina-Hanna-CV.pdf" class="btn-cv font-bold py-2 px-6 rounded-full mt-6 inline-block">
+                        <i class="fas fa-download mr-2"></i> Download CV
+                    </a>
+                </div>
+            </header>
+
+            <!-- Tab Navigation -->
+            <div class="border-b border-[#30363d] bg-[#161b22]">
+                <nav class="flex justify-center -mb-px flex-wrap">
+                    <button class="tab-button active py-3 px-4 text-sm sm:text-base" data-tab-target="#summary">Summary</button>
+                    <button class="tab-button py-3 px-4 text-sm sm:text-base" data-tab-target="#experience">Experience</button>
+                    <button class="tab-button py-3 px-4 text-sm sm:text-base" data-tab-target="#projects">Projects</button>
+                    <button class="tab-button py-3 px-4 text-sm sm:text-base" data-tab-target="#skills">Skills</button>
+                    <button class="tab-button py-3 px-4 text-sm sm:text-base" data-tab-target="#certs">Activities</button>
+                    <button class="tab-button py-3 px-4 text-sm sm:text-base" data-tab-target="#links">Links</button>
+                </nav>
+            </div>
+
+
+            <main class="p-4 sm:p-8">
+                <!-- Tab Content Panels -->
+                <div id="summary" class="tab-content">
+                     <h2 class="text-2xl font-bold section-title pl-4 mb-4">Summary</h2>
+                    <p class="text-lg leading-relaxed text-gray-400">
+                        Electrical engineer with a strong academic foundation and hands-on training in control panel design, PLC programming (TIA Portal), SIMATIC S7-300, Control Panel Wiring, certification (DIALux Evo) and AutoCAD. Possesses solid MATLAB skills, factory simulation capabilities (Factory I/O), and expertise in classic control.
+                    </p>
+                </div>
+                
+                <div id="experience" class="tab-content hidden">
+                     <h2 class="text-2xl font-bold section-title pl-4 mb-6">Experience</h2>
+                    <div class="relative timeline pl-8">
+                        <div class="mb-8 timeline-item">
+                            <h3 class="text-xl font-semibold text-amber-300">Branch Secretary</h3>
+                            <p class="text-md text-gray-400">IEEE ET5 Student Branch (IEEE NCSB) | May 2025 - Present</p>
+                            <ul class="list-disc pl-5 mt-2 text-gray-400 space-y-1">
+                                <li>Oversee all official communications, including meeting minutes and membership records for a branch of 150+ members.</li>
+                                <li>Develop and streamline branch reports for submission to IEEE regional leadership.</li>
+                            </ul>
+                        </div>
+                        <div class="mb-8 timeline-item">
+                            <h3 class="text-xl font-semibold text-amber-300">Webmaster & Social Media Officer</h3>
+                            <p class="text-md text-gray-400">IEEE ET5 Student Branch (IEEE NCSB) | Oct 2024 - May 2025</p>
+                             <ul class="list-disc pl-5 mt-2 text-gray-400 space-y-1">
+                                <li>Redesigned branch website and managed social media channels, increasing engagement by 70%.</li>
+                                <li>Created event banners and technical content for online audiences.</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-item">
+                            <h3 class="text-xl font-semibold text-amber-300">Organizational & Technical Member</h3>
+                            <p class="text-md text-gray-400">IEEE ET5 Student Branch (IEEE NCSB) | Oct 2022 - Sep 2024</p>
+                             <ul class="list-disc pl-5 mt-2 text-gray-400 space-y-1">
+                                <li>Coordinated logistics and planning for 5+ technical workshops and student events.</li>
+                                <li>Managed the preparation and distribution of materials and documentation for all branch activities.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                 <div id="projects" class="tab-content hidden">
+                    <h2 class="text-2xl font-bold section-title pl-4 mb-6">Projects</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="card p-6 rounded-lg">
+                            <h3 class="text-xl font-bold text-amber-400 mb-2">Light Detection Sensor Circuit</h3>
+                            <p class="font-semibold text-gray-400 mb-2">Academic Project</p>
+                            <p class="text-gray-400">Designed and simulated a light-detection circuit integrated with lighting control to reduce energy use and improve system efficiency.</p>
+                        </div>
+                        <div class="card p-6 rounded-lg">
+                            <h3 class="text-xl font-bold text-amber-400 mb-2">Power Systems Analysis</h3>
+                             <p class="font-semibold text-gray-400 mb-2">Academic Project</p>
+                            <p class="text-gray-400">Used MATLAB to model and analyze faults, monitor system performance, and simplify complex network structures using graph theory.</p>
+                        </div>
+                    </div>
+                     <h2 class="text-2xl font-bold section-title pl-4 mt-10 mb-6">Recent Research & Presentations</h2>
+                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                        <div class="card p-4 rounded-lg text-center"><i class="fas fa-book-open text-amber-400 text-2xl mb-2"></i><p>Transformer Design</p></div>
+                        <div class="card p-4 rounded-lg text-center"><i class="fas fa-book-open text-amber-400 text-2xl mb-2"></i><p>Earthing System</p></div>
+                        <div class="card p-4 rounded-lg text-center"><i class="fas fa-book-open text-amber-400 text-2xl mb-2"></i><p>Static & Microprocessor Relays</p></div>
+                        <div class="card p-4 rounded-lg text-center"><i class="fas fa-book-open text-amber-400 text-2xl mb-2"></i><p>AC/DC Transmission Lines</p></div>
+                     </div>
+                </div>
+
+                <div id="skills" class="tab-content hidden">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <section>
+                            <h2 class="text-2xl font-bold section-title pl-4 mb-6">Technical Skills</h2>
+                            <div class="space-y-4">
+                                <div class="card p-4 rounded-lg"><h4 class="font-semibold text-lg text-amber-400"><i class="fas fa-microchip mr-2"></i>PLC/SCADA</h4><p class="text-gray-400">Siemens TIA Portal, WinCC, Simatic Manager</p></div>
+                                <div class="card p-4 rounded-lg"><h4 class="font-semibold text-lg text-amber-400"><i class="fas fa-cogs mr-2"></i>Simulation</h4><p class="text-gray-400">Factory IO, MATLAB, EKTS</p></div>
+                                <div class="card p-4 rounded-lg"><h4 class="font-semibold text-lg text-amber-400"><i class="fas fa-drafting-compass mr-2"></i>Design & Lighting</h4><p class="text-gray-400">AutoCAD, DIALux Evo</p></div>
+                            </div>
+                            <h2 class="text-2xl font-bold section-title pl-4 mb-6 mt-8">Soft Skills</h2>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                               <div class="card p-4 rounded-lg flex items-center"><i class="fas fa-users-cog text-amber-400 text-xl mr-3"></i><p>Leadership & Management</p></div>
+                               <div class="card p-4 rounded-lg flex items-center"><i class="fas fa-lightbulb text-amber-400 text-xl mr-3"></i><p>Problem Solving</p></div>
+                               <div class="card p-4 rounded-lg flex items-center"><i class="fas fa-clock text-amber-400 text-xl mr-3"></i><p>Time Management</p></div>
+                               <div class="card p-4 rounded-lg flex items-center"><i class="fas fa-comments text-amber-400 text-xl mr-3"></i><p>Communication</p></div>
+                               <div class="card p-4 rounded-lg flex items-center"><i class="fas fa-brain text-amber-400 text-xl mr-3"></i><p>Continuous Learning</p></div>
+                               <div class="card p-4 rounded-lg flex items-center"><i class="fas fa-chalkboard-teacher text-amber-400 text-xl mr-3"></i><p>Lecturing</p></div>
+                            </div>
+                        </section>
+                        <section>
+                             <h2 class="text-2xl font-bold section-title pl-4 mb-6">Education</h2>
+                            <div class="space-y-4">
+                               <div class="card p-4 rounded-lg"><h3 class="text-xl font-semibold text-amber-400">Bachelor of Electrical Engineering</h3><p class="text-md text-gray-400">New Cairo Academy (2021-2026)</p></div>
+                               <div class="card p-4 rounded-lg"><h3 class="text-xl font-semibold text-amber-400">Diploma in Architecture</h3><p class="text-md text-gray-400">Dar El Salam Architectural School (2016-2021)</p></div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <div id="certs" class="tab-content hidden">
+                    <section>
+                        <h2 class="text-2xl font-bold section-title pl-4 mb-6">Certificates & Events</h2>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                            <div class="card p-4 rounded-lg text-center"><i class="fas fa-certificate text-amber-400 text-2xl mb-2"></i><p>Electrical Distribution</p></div>
+                            <div class="card p-4 rounded-lg text-center"><i class="fas fa-certificate text-amber-400 text-2xl mb-2"></i><p>Classic Control</p></div>
+                            <div class="card p-4 rounded-lg text-center"><i class="fas fa-certificate text-amber-400 text-2xl mb-2"></i><p>PLC Basic Programming</p></div>
+                            <div class="card p-4 rounded-lg text-center"><i class="fas fa-users text-amber-400 text-2xl mb-2"></i><p>Kaizen 2025</p></div>
+                            <div class="card p-4 rounded-lg text-center"><i class="fas fa-lightbulb text-amber-400 text-2xl mb-2"></i><p>Siraj & Flare Labs</p></div>
+                            <div class="card p-4 rounded-lg text-center"><i class="fas fa-gas-pump text-amber-400 text-2xl mb-2"></i><p>EGYPES</p></div>
+                        </div>
+                    </section>
+                </div>
+
+                <div id="links" class="tab-content hidden">
+                    <h2 class="text-2xl font-bold section-title pl-4 mb-6">Important Links</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-center">
+                        <a href="https://wa.me/201203006152" target="_blank" class="link-card p-6 rounded-lg flex flex-col justify-center items-center"><i class="fab fa-whatsapp text-4xl mb-2 text-green-500"></i><span class="font-semibold text-lg">WhatsApp</span></a>
+                        <a href="https://www.linkedin.com/in/engminahanna/" target="_blank" class="link-card p-6 rounded-lg flex flex-col justify-center items-center"><i class="fab fa-linkedin text-4xl mb-2 text-sky-500"></i><span class="font-semibold text-lg">LinkedIn</span></a>
+                        <a href="https://www.youtube.com/@Eng-MinaHanna" target="_blank" class="link-card p-6 rounded-lg flex flex-col justify-center items-center"><i class="fab fa-youtube text-4xl mb-2 text-red-600"></i><span class="font-semibold text-lg">YouTube</span></a>
+                        <a href="https://www.facebook.com/Eng.Mina.H.F" target="_blank" class="link-card p-6 rounded-lg flex flex-col justify-center items-center"><i class="fab fa-facebook text-4xl mb-2 text-blue-600"></i><span class="font-semibold text-lg">Facebook</span></a>
+                        <a href="https://minal0p.github.io/Flash-Team/" target="_blank" class="link-card p-6 rounded-lg flex flex-col justify-center items-center"><i class="fab fa-github text-4xl mb-2 text-white"></i><span class="font-semibold text-lg">Flash-Team</span></a>
+                        <a href="https://studentbranches.ieee.org/eg-hiet-sb/" target="_blank" class="link-card p-6 rounded-lg flex flex-col justify-center items-center"><i class="fas fa-globe text-4xl mb-2 text-cyan-400"></i><span class="font-semibold text-lg">IEEE Branch</span></a>
+                        <a href="mailto:minahanna@ieee.org" class="link-card p-6 rounded-lg flex flex-col justify-center items-center"><i class="fas fa-envelope text-4xl mb-2 text-gray-400"></i><span class="font-semibold text-lg">Email</span></a>
+                    </div>
+                </div>
+            </main>
+
+             <!-- Footer -->
+            <footer class="text-center p-4 bg-[#161b22] text-gray-500 border-t border-[#30363d]">
+                <p class="text-sm">&copy; 2025 Mina Hanna Faheem. All rights reserved.</p>
+            </footer>
+
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for tab functionality
+        const tabButtons = document.querySelectorAll('.tab-button');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const target = document.querySelector(button.dataset.tabTarget);
+
+                // Deactivate all tabs and content
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                tabContents.forEach(content => content.classList.add('hidden'));
+
+                // Activate the clicked tab and its content
+                button.classList.add('active');
+                target.classList.remove('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
