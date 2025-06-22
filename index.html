@@ -100,9 +100,14 @@
         .header-bg h1 { animation: subtle-pulse 6s ease-in-out infinite; }
         .card i, .link-card i { transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
         .card:hover i, .link-card:hover i { transform: scale(1.1) rotate(-8deg); }
+        .link-card:hover img { transform: scale(1.1) rotate(-8deg); }
 
         .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
         .reveal.visible { opacity: 1; transform: translateY(0); }
+        
+        .title-shadow {
+             text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+        }
 
     </style>
 </head>
@@ -116,7 +121,7 @@
                  <div class="relative z-10 flex flex-col items-center">
                     <img src="https://uzcrjhhvwgllsdsvftuj.supabase.co/storage/v1/object/public/personal-image//Mina%20Hanna.png" alt="Mina Hanna Faheem" class="w-32 h-32 rounded-full border-4 accent-border shadow-lg mb-4">
                     <h1 class="text-4xl sm:text-5xl font-extrabold">Mina Hanna Faheem</h1>
-                    <p class="text-xl sm:text-2xl mt-2 font-semibold text-white dark:text-amber-300">Electrical Engineer</p>
+                    <p class="text-xl sm:text-2xl mt-2 font-semibold text-white dark:text-amber-300 title-shadow">Electrical Engineer</p>
                     <a href="Mina Hanna.pdf" download="Mina-Hanna-CV.pdf" class="btn-cv font-bold py-2 px-6 rounded-full mt-6 inline-block">
                         <i class="fas fa-download mr-2"></i> Download CV
                     </a>
@@ -289,7 +294,10 @@
                             <a href="https://www.linkedin.com/in/engminahanna/" target="_blank" class="card link-card p-6 rounded-lg flex flex-col justify-center items-center"><i class="fab fa-linkedin text-4xl mb-2 text-sky-500"></i><span class="font-semibold text-lg">LinkedIn</span></a>
                             <a href="https://www.youtube.com/@Eng-MinaHanna" target="_blank" class="card link-card p-6 rounded-lg flex flex-col justify-center items-center"><i class="fab fa-youtube text-4xl mb-2 text-red-600"></i><span class="font-semibold text-lg">YouTube</span></a>
                             <a href="https://www.facebook.com/Eng.Mina.H.F" target="_blank" class="card link-card p-6 rounded-lg flex flex-col justify-center items-center"><i class="fab fa-facebook text-4xl mb-2 text-blue-600"></i><span class="font-semibold text-lg">Facebook</span></a>
-                            <a href="https://minal0p.github.io/Flash-Team/" target="_blank" class="card link-card p-6 rounded-lg flex flex-col justify-center items-center"><i class="fab fa-github text-4xl mb-2"></i><span class="font-semibold text-lg">Flash-Team</span></a>
+                            <a href="https://minal0p.github.io/Flash-Team/" target="_blank" class="card link-card p-6 rounded-lg flex flex-col justify-center items-center">
+                                <img src="https://uzcrjhhvwgllsdsvftuj.supabase.co/storage/v1/object/public/events-images//event_8428244b-0a2c-44c5-9c72-a34a8019cbb7_1749047673007_Copy_of_Flash_(4).png" alt="Flash Team Logo" class="h-10 w-10 rounded-full object-cover mb-2 transition-transform duration-300">
+                                <span class="font-semibold text-lg">Flash-Team</span>
+                            </a>
                             <a href="https://studentbranches.ieee.org/eg-hiet-sb/" target="_blank" class="card link-card p-6 rounded-lg flex flex-col justify-center items-center"><i class="fas fa-globe text-4xl mb-2 text-cyan-400"></i><span class="font-semibold text-lg">IEEE Branch</span></a>
                             <a href="mailto:minahanna@ieee.org" class="card link-card p-6 rounded-lg flex flex-col justify-center items-center"><i class="fas fa-envelope text-4xl mb-2"></i><span class="font-semibold text-lg">Email</span></a>
                         </div>
